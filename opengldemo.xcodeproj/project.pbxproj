@@ -38,6 +38,7 @@
 		8AFBE6FD1FA3C4DB009574EC /* teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teapot.h; sourceTree = "<group>"; };
 		8AFBE6FE1FA3E064009574EC /* maths_funcs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maths_funcs.cpp; sourceTree = "<group>"; };
 		8AFBE6FF1FA3E064009574EC /* maths_funcs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maths_funcs.h; sourceTree = "<group>"; };
+		8AFC3FEE1FB7CFDF00611AE7 /* sphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 				8AFBE6FF1FA3E064009574EC /* maths_funcs.h */,
 				8AFBE6FD1FA3C4DB009574EC /* teapot.h */,
 				8AAE94EE1F7A9122005E2F08 /* main.cpp */,
+				8AFC3FEE1FB7CFDF00611AE7 /* sphere.h */,
 			);
 			path = opengldemo;
 			sourceTree = "<group>";
