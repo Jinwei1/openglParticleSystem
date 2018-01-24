@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A059AB4201878660039F03F /* Phong.fs.glsl in Sources */ = {isa = PBXBuildFile; fileRef = 8A059AB3201878660039F03F /* Phong.fs.glsl */; };
 		8A0672701F87CE1200A95EC8 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A06726F1F87CE1200A95EC8 /* libglfw.3.2.dylib */; };
 		8AAE94EF1F7A9122005E2F08 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE94EE1F7A9122005E2F08 /* main.cpp */; };
 		8AAE94F71F7A914C005E2F08 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAE94F61F7A914C005E2F08 /* OpenGL.framework */; };
 		8AC35CAB1F84E67F00227DEB /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC35CAA1F84E67F00227DEB /* libGLEW.2.1.0.dylib */; };
-		8AFBE7001FA3E064009574EC /* maths_funcs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AFBE6FE1FA3E064009574EC /* maths_funcs.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,18 +27,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A059AAC20186D9B0039F03F /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		8A059AB2201874950039F03F /* Phong.vs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Phong.vs.glsl; sourceTree = "<group>"; };
+		8A059AB3201878660039F03F /* Phong.fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Phong.fs.glsl; sourceTree = "<group>"; };
+		8A059AB520188F040039F03F /* Toon.vs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Toon.vs.glsl; sourceTree = "<group>"; };
+		8A059AB620188F110039F03F /* Toon.fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Toon.fs.glsl; sourceTree = "<group>"; };
+		8A059AB72018D0CE0039F03F /* cook-torrance.vs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cook-torrance.vs.glsl"; sourceTree = "<group>"; };
+		8A059AB82018D0CE0039F03F /* cook-torrance.fs.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cook-torrance.fs.glsl"; sourceTree = "<group>"; };
 		8A06726D1F87CDF900A95EC8 /* 3.2.1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 3.2.1; path = ../../../../usr/local/Cellar/glfw/3.2.1; sourceTree = "<group>"; };
 		8A06726F1F87CE1200A95EC8 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
-		8AAE94EB1F7A9122005E2F08 /* opengldemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opengldemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AAE94EB1F7A9122005E2F08 /* rtRenderingA1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rtRenderingA1; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAE94EE1F7A9122005E2F08 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8AAE94F61F7A914C005E2F08 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		8AAE94F81F7A9156005E2F08 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		8AC35CA81F84E66300227DEB /* libglut.3.10.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglut.3.10.0.dylib; path = ../../../../usr/local/Cellar/freeglut/3.0.0/lib/libglut.3.10.0.dylib; sourceTree = "<group>"; };
 		8AC35CAA1F84E67F00227DEB /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
-		8AFBE6FD1FA3C4DB009574EC /* teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teapot.h; sourceTree = "<group>"; };
-		8AFBE6FE1FA3E064009574EC /* maths_funcs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maths_funcs.cpp; sourceTree = "<group>"; };
-		8AFBE6FF1FA3E064009574EC /* maths_funcs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maths_funcs.h; sourceTree = "<group>"; };
-		8AFC3FEE1FB7CFDF00611AE7 /* sphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
+		8AFC3FEE1FB7CFDF00611AE7 /* mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +59,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A059AAD2018729A0039F03F /* files */ = {
+			isa = PBXGroup;
+			children = (
+				8A059AB82018D0CE0039F03F /* cook-torrance.fs.glsl */,
+				8A059AB72018D0CE0039F03F /* cook-torrance.vs.glsl */,
+				8A059AB2201874950039F03F /* Phong.vs.glsl */,
+				8A059AB520188F040039F03F /* Toon.vs.glsl */,
+				8A059AB3201878660039F03F /* Phong.fs.glsl */,
+				8A059AB620188F110039F03F /* Toon.fs.glsl */,
+			);
+			path = files;
+			sourceTree = "<group>";
+		};
 		8AAE94E21F7A9122005E2F08 = {
 			isa = PBXGroup;
 			children = (
+				8A059AAD2018729A0039F03F /* files */,
 				8AAE94ED1F7A9122005E2F08 /* opengldemo */,
 				8AAE94EC1F7A9122005E2F08 /* Products */,
 				8AAE94F51F7A914C005E2F08 /* Frameworks */,
@@ -67,7 +85,7 @@
 		8AAE94EC1F7A9122005E2F08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8AAE94EB1F7A9122005E2F08 /* opengldemo */,
+				8AAE94EB1F7A9122005E2F08 /* rtRenderingA1 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,11 +93,9 @@
 		8AAE94ED1F7A9122005E2F08 /* opengldemo */ = {
 			isa = PBXGroup;
 			children = (
-				8AFBE6FE1FA3E064009574EC /* maths_funcs.cpp */,
-				8AFBE6FF1FA3E064009574EC /* maths_funcs.h */,
-				8AFBE6FD1FA3C4DB009574EC /* teapot.h */,
 				8AAE94EE1F7A9122005E2F08 /* main.cpp */,
-				8AFC3FEE1FB7CFDF00611AE7 /* sphere.h */,
+				8AFC3FEE1FB7CFDF00611AE7 /* mesh.h */,
+				8A059AAC20186D9B0039F03F /* Shader.h */,
 			);
 			path = opengldemo;
 			sourceTree = "<group>";
@@ -100,9 +116,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8AAE94EA1F7A9122005E2F08 /* opengldemo */ = {
+		8AAE94EA1F7A9122005E2F08 /* rtRenderingA1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8AAE94F21F7A9122005E2F08 /* Build configuration list for PBXNativeTarget "opengldemo" */;
+			buildConfigurationList = 8AAE94F21F7A9122005E2F08 /* Build configuration list for PBXNativeTarget "rtRenderingA1" */;
 			buildPhases = (
 				8AAE94E71F7A9122005E2F08 /* Sources */,
 				8AAE94E81F7A9122005E2F08 /* Frameworks */,
@@ -112,9 +128,9 @@
 			);
 			dependencies = (
 			);
-			name = opengldemo;
+			name = rtRenderingA1;
 			productName = opengldemo;
-			productReference = 8AAE94EB1F7A9122005E2F08 /* opengldemo */;
+			productReference = 8AAE94EB1F7A9122005E2F08 /* rtRenderingA1 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +148,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8AAE94E61F7A9122005E2F08 /* Build configuration list for PBXProject "opengldemo" */;
+			buildConfigurationList = 8AAE94E61F7A9122005E2F08 /* Build configuration list for PBXProject "rtRenderingA1" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -144,7 +160,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8AAE94EA1F7A9122005E2F08 /* opengldemo */,
+				8AAE94EA1F7A9122005E2F08 /* rtRenderingA1 */,
 			);
 		};
 /* End PBXProject section */
@@ -154,8 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A059AB4201878660039F03F /* Phong.fs.glsl in Sources */,
 				8AAE94EF1F7A9122005E2F08 /* main.cpp in Sources */,
-				8AFBE7001FA3E064009574EC /* maths_funcs.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +310,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8AAE94E61F7A9122005E2F08 /* Build configuration list for PBXProject "opengldemo" */ = {
+		8AAE94E61F7A9122005E2F08 /* Build configuration list for PBXProject "rtRenderingA1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8AAE94F01F7A9122005E2F08 /* Debug */,
@@ -303,7 +319,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8AAE94F21F7A9122005E2F08 /* Build configuration list for PBXNativeTarget "opengldemo" */ = {
+		8AAE94F21F7A9122005E2F08 /* Build configuration list for PBXNativeTarget "rtRenderingA1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8AAE94F31F7A9122005E2F08 /* Debug */,
