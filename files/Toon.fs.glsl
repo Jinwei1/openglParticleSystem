@@ -1,13 +1,19 @@
 #version 330 core
-in vec3 color;
+
+struct Texture
+{
+    sampler2D diffuse;
+};
+
+in vec2 text_pos;
 out vec4 fcolor;
 in vec3 fP;
 in vec3 ONormal;
 uniform vec3 lightPosition;
 uniform vec3 viewPosition;
 uniform vec3 lightColor;
+uniform Texture material;
 void main(){
-
 
 
 vec3 normal = normalize(ONormal);
@@ -19,7 +25,8 @@ else if(diff>0.6)   toonDiff = vec3(0.8,0.8,0.8);
 else if(diff>0.4)   toonDiff = vec3(0.6,0.6,0.6);
 else if(diff>0.2)   toonDiff = vec3(0.4,0.4,0.4);
 else                toonDiff = vec3(0.2,0.2,0.2);
-vec3 fcolor3 = toonDiff * color;
-fcolor = vec4(fcolor3 , 1.0f);
+//vec4 fcolor3 = vec4(toonDiff,1.0f)*texture(texture_diffuse,color);
+vec3 textureColor = toonDiff * vec3(texture(material.diffuse,text_pos));
+fcolor = vec4(textureColor,1.0f);
 }
 

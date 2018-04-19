@@ -1,15 +1,22 @@
 #version 330 core
-in vec3 color;
+
+struct Texture
+{
+    sampler2D diffuse;
+};
+
+in vec2 text_pos;
 out vec4 fcolor;
 in vec3 fP;
 in vec3 ONormal;
 uniform vec3 lightPosition;
 uniform vec3 viewPosition;
 uniform vec3 lightColor;
+uniform Texture material;
 void main(){
-int blinn=1;
+int blinn=1;  // default blinn phong
 
-float ambientStrenth = 0.05f;
+float ambientStrenth = 0.2f;
 vec3 ambient = ambientStrenth*lightColor;
 
 vec3 normal = normalize(ONormal);
@@ -30,7 +37,11 @@ specular = pow(max(dot(viewDir, refDir),0.0),32);
 }
 vec3 sp = spRatio * specular * lightColor;
 
-vec3 fcolor3 = (ambient+diffuse + sp) * color;
-fcolor = vec4(fcolor3 , 1.0f);
+//vec3 fcolor3 = (ambient+diffuse + sp) * texture(texture_diffuse1.diffuse,text_pos);
+//fcolor = vec4(texture(material.diffuse,text_pos),1.0f);
+//fcolor = vec4(texture(texture_diffuse1.diffuse,text_pos));
+    
+vec3 textureColor = (ambient+diffuse+sp)*vec3(texture(material.diffuse,text_pos));
+    fcolor = vec4(textureColor,1.0f);
 }
 
